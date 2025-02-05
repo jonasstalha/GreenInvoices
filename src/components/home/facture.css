@@ -1,0 +1,148 @@
+/* Reset Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Background to match the container */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding/border in dimensions */
+  min-height: 100vh; /* Ensure body fills the viewport height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: flex-start; /* Align content at the top */
+}
+
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Add space between components */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f9f9f9; /* Light background for separation */
+  max-width: 1000px; /* Limit the container's width */
+  width: 100vw; /* Full width for responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Individual Items */
+.form,
+.alert,
+.chart1,
+.chart2 {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent content overflow */
+  word-wrap: break-word; /* Ensure long text breaks into new lines */
+  width: 100%; /* Take 100% of the grid cell's width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Form Container */
+form.formm {
+  background: #ffffff; /* White background for contrast */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Spacing inside the form */
+  box-sizing: border-box; /* Ensure padding fits within the width */
+  font-family: Arial, sans-serif; /* Consistent font */
+  width: 100%; /* Take 100% of the parent's width */
+}
+
+/* Form Title */
+form.formm h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Form Labels */
+form.formm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Form Inputs */
+form.formm input,
+form.formm select,
+form.formm button {
+  width: 100%; /* Full width of the form element */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* File Input */
+form.formm input[type="file"] {
+  padding: 5px;
+}
+
+/* Button Styling */
+form.formm button {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+/* Button Hover Effect */
+form.formm button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Button Active Effect */
+form.formm button:active {
+  background-color: #004494; /* Even darker blue on click */
+  transform: translateY(1px); /* Pressed-down effect */
+}
+
+/* Add Focus Effect */
+form.formm input:focus,
+form.formm select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Glowing blue border */
+}
+
+/* Add Space Between Fields */
+form.formm .form-group {
+  margin-bottom: 15px;
+}
+
+/* Alert Box Styling */
+.alert {
+  max-width: 350px; /* Limit the width of the alert box */
+  width: 100%; /* Ensure it takes full width within its grid cell */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert Box Title */
+.alert h2 {
+  font-size: 20px;
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+/* Alert Message */
+.alert p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}

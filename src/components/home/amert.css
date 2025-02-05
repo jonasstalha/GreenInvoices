@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.alert-box{
+    display: flex;
+    align-items: flex-start; /* Align both elements to the top */
+    gap: 20px; /* Space between form and box */
+}
